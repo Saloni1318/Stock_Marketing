@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stock market</title>
+    <link rel="stylesheet" href="stock market.css" />
+  </head>
+  <body>
+    <h1 id="heading">Stock Market Analysis</h1>
+
+    <div class="parent-container">
+      <div id="main-content">
+        <div class="chart-container">
+          <canvas id="myChart"></canvas>
+          <div class="btn-container">
+            <button class="duration-btn" id="1mo-btn">1month</button>
+           <button class="duration-btn" id="3mo-btn">3month</button>
+            <button class="duration-btn" id="1y-btn">1year</button>
+            <button class="duration-btn" id="5y-btn">5year</button>
+          </div>
+        </div>
+
+        <div class="details-container">
+          <span class="stockName"></span>
+          <span class="profit"></span>
+          <span class="bookValue"></span>
+          <p class="description"></p>
+        </div>
+      </div>
+
+ <!-- html code for  aside section / stocks queue -->
+
+      <div id="aside-content">
+        <ul>
+          <li class="stockQueue">
+
+            
+           
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script  src="stock market.js"></script>
+  </body>
+</html>
